@@ -114,6 +114,29 @@ a {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .card {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    h3 {
+      font-size: 14px;
+    }
+    .subtitle {
+      font-size: 11px;
+    }
+    .description {
+      display: none;
+    }
+    .options {
+      display: none;
+    }
+    .button {
+      font-size: 12px;
+    }
+  }
+}
+
 .button {
   display: block;
   font-size: 1rem;

@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repository test suite renders 'Description not available' if description is empty 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="content"
+  >
+    <h3>
+      Test repository name
+    </h3>
+    <div
+      className="subtitle"
+    >
+      03/02/2019
+    </div>
+    <p
+      className="description"
+    >
+      Description not available
+    </p>
+    <div
+      className="details"
+    >
+      <div
+        className="inner"
+      >
+        <div>
+          <a
+            className="button"
+            href="www.google.com"
+            id="repoUrl"
+          >
+            Go !
+          </a>
+        </div>
+        <div
+          className="options"
+        >
+          <div>
+            <a>
+              <i
+                class="fas fa-code-branch"
+              />
+               
+              3
+               forks
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Repository test suite renders correctly 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="content"
+  >
+    <h3>
+      Test repository name
+    </h3>
+    <div
+      className="subtitle"
+    >
+      03/02/2019
+    </div>
+    <p
+      className="description"
+    >
+      Test repository description
+    </p>
+    <div
+      className="details"
+    >
+      <div
+        className="inner"
+      >
+        <div>
+          <a
+            className="button"
+            href="www.google.com"
+            id="repoUrl"
+          >
+            Go !
+          </a>
+        </div>
+        <div
+          className="options"
+        >
+          <div>
+            <a>
+              <i
+                class="fas fa-code-branch"
+              />
+               
+              3
+               forks
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -12,12 +12,14 @@ const Repository = ({ name, description, forkCount, createdAt, url }) => {
         <div className={style.subtitle}>
           {moment(createdAt).format("MM/DD/YYYY")}
         </div>
-        <p className={style.description}>{description}</p>
+        <p className={style.description}>
+          {description || "Description not available"}
+        </p>
 
         <div className={style.details}>
           <div className={style.inner}>
             <div>
-              <a className={style.button} href={url}>
+              <a id="repoUrl" className={style.button} href={url}>
                 Go !
               </a>
             </div>
@@ -37,7 +39,11 @@ const Repository = ({ name, description, forkCount, createdAt, url }) => {
 }
 
 Repository.propTypes = {
-  children: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  forkCount: PropTypes.number,
+  createdAt: PropTypes.object,
+  url: PropTypes.string.isRequired,
 }
 
 export default Repository

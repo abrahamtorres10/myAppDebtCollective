@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-debtcollective-test",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Test App",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
@@ -25,7 +25,16 @@
     "react-helmet": "^6.0.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "babel-jest": "^26.0.1",
+    "babel-preset-gatsby": "^0.4.7",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
+    "prettier": "2.0.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.13.1"
   },
   "keywords": [
     "gatsby"
@@ -33,12 +42,12 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "GITHUB_TOKEN=ac9e57e8f7a3ea7321051b2de3f3bf771f0d26a0 gatsby develop",
+    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
