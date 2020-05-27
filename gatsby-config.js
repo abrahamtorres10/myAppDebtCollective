@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -35,7 +36,7 @@ module.exports = {
       options: {
         token: process.env.GITHUB_TOKEN,
         variables: {
-          org: "debtcollective"
+          org: "debtcollective",
         },
         graphQLQuery: `
           query ($org: String = "") {
@@ -54,12 +55,14 @@ module.exports = {
                   isPrivate
                   name
                   forkCount
+                  createdAt
+                  url
                 }
               }
             }
           }          
-        `
-      }
-    }
+        `,
+      },
+    },
   ],
 }
